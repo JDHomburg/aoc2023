@@ -1,7 +1,7 @@
 import re
 
 
-def day01_task1(file_name='./input_task1.txt'):
+def task1(file_name='./input_task1.txt'):
     value = 0
     with open(file_name, 'r') as f:
         for line in f.readlines():
@@ -12,7 +12,7 @@ def day01_task1(file_name='./input_task1.txt'):
     return value
 
 
-def day01_task2(file_name='./input_task1.txt'):
+def task2(file_name='./input_task1.txt'):
     value_map = {'zero': '0',
                  'one': '1',
                  'two': '2',
@@ -36,5 +36,5 @@ def day01_task2(file_name='./input_task1.txt'):
 
 
 if __name__ == '__main__':
-    print(day01_task1())
-    print(day01_task2('./input_task1.txt'))
+    print(task1())
+    print(task2('./input_task1.txt'))
